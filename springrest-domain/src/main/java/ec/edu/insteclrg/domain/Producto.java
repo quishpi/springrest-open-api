@@ -18,7 +18,7 @@ public class Producto {
 	@Column(updatable = false, nullable = false)
 	private long id;
 	
-	@Column (unique = false, nullable = false)
+	@Column (unique = true, nullable = false)
 	private String codigo;
 	
 	@Column (nullable = false)
