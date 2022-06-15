@@ -19,18 +19,18 @@ public class Producto {
 	private long id;
 	
 	@Column (unique = true, nullable = false)
-	private String codigo;
+	private String code;
 	
 	@Column (nullable = false)
 	private String name;
 	
 
 	@Column (nullable = false)
-	private String descripcion;
+	private String description;
 	
 
 	@Column (nullable = false)
-	private int precioventa;
+	private int price;
 
 
 	@Column (nullable = false)
