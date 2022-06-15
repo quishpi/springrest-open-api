@@ -35,7 +35,7 @@ public class Empresa {
 	private String email;
 
 	@Column(nullable = false)
-	private String siteWeb;
+	private String WebSite;
 	
 	@Column(nullable = false)
 	private String logo;
