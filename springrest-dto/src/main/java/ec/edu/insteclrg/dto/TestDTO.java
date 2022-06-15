@@ -7,6 +7,8 @@ public class TestDTO {
 
 	private long id;
 
+	private String code;
+
 	private String name;
 
 }

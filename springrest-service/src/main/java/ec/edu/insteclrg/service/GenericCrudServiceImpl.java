@@ -30,17 +30,6 @@ public abstract class GenericCrudServiceImpl<DOMAIN, DTO> implements GenericCrud
 	}
 
 	@Override
-	public void update(DTO dto) {
-		Optional<DOMAIN> optional = find(dto);
-		if (optional.isPresent()) {
-			DOMAIN domainObject = mapToDomain(dto);
-			repository.save(domainObject);
-		} else {
-			throw new ApiException(String.format("Registro %s no existe en el sistema", dto));
-		}
-	}
-
-	@Override
 	public List<DTO> findAll(DTO dto) {
 		DOMAIN domain = mapToDomain(dto);
 		ExampleMatcher matcher = ExampleMatcher.matching().withIgnoreNullValues().withIgnorePaths("id");
