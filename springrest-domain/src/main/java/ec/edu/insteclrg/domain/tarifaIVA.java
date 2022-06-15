@@ -20,9 +20,9 @@ public class tarifaIVA {
 	private long id;
 	
 	@Column(nullable = true, unique= true )
-	private String codigo; 
+	private String code; 
 	
 	@Column(nullable = false)
-	private String porcentajeIVA; 
+	private String percentageIVA; 
 	
 }
