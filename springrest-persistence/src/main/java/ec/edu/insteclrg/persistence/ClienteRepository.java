@@ -7,5 +7,5 @@ import ec.edu.insteclrg.domain.Cliente;
 
 @Repository
 public interface ClienteRepository extends JpaRepository<Cliente, Long>{
-	Optional<Cliente> findByCode(String code);
+	Optional<Cliente> findById(Long id);
 }
